@@ -34,7 +34,7 @@ function changeListener188() {
 
   if (value == "Vanilla188") {
     window.open("1.8/vanilla/index.html");
-  } else if (value == "resent188") {
+  } else if (value == "Resent188") {
     window.open("1.8/resent/index.html");
   } else if (value == "placeholder188") {
     alert("You must choose an option.\n- Sebastian-105");
