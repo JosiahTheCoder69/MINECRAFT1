@@ -22,15 +22,21 @@ Made by @Sebastian-105 (https://github.com).
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eaglercraft-105 | Sebastian-105</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="105.png">
+    <link rel="icon" href="105.png" />
   </head>
   <body>
     <div class="center" style="font-size: 25px">
       <label for="version">Choose A Eaglercraft Version:</label>
       <select name="version" id="version">
-        <option value="placeholder">Choose a version</option>
-        <option value="152">Eaglercraft 1.5.2</option>
-        <option value="188">Eaglercraft 1.8.8</option>
+        <option class="options" id="placeholder" value="placeholder">
+          Choose a version
+        </option>
+        <option class="options" id="eagler152" value="eagler152">
+          Eaglercraft 1.5.2
+        </option>
+        <option class="options" id="eagler188" value="eagler188">
+          Eaglercraft 1.8.8
+        </option>
       </select>
       <p>
         ─ <aasd style="font-size: 30px">S</aasd>ebastian-<aasd
@@ -39,7 +45,36 @@ Made by @Sebastian-105 (https://github.com).
         >
       </p>
     </div>
-    <div></div>
+   <div class="diva">
+      <select name="version" id="152options">
+        <option class="options" id="placeholder" value="placeholder152">
+          Choose a 1.5.2 Platform
+        </option>
+        <option class="options" id="eagler152" value="Precision">
+          Precision Client
+        </option>
+        <option class="options" id="eagler188" value="Resent">
+          Resent Client
+        </option>
+        <option class="options" id="eageroffline152" value="Vanilla">
+          Vanilla
+        </option>
+      </select>
+    </div>
+    <div class="dive">
+      <select name="version" id="188options">
+        <option class="options" id="placeholder" value="placeholder188">
+          Choose a 1.8.8 Platform
+        </option>
+        <option class="options" id="eagler188" value="Resent188">
+          Resent Client
+        </option>
+        <option class="options" id="eageroffline152" value="Vanilla188">
+          Vanilla
+        </option>
+      </select>
+    </div>
+    <script src="https://unpkg.com/jquery@3.6.3/dist/jquery.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

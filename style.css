@@ -20,8 +20,16 @@ select {
 
 }
 
-div {
+.diva {
     border-width: 2px;
     border: color(white);
-    transform: translate(00%, 450px);
+    transform: translate(00%, 200px);
+    display: none;
+}
+
+.dive {
+    border-width: 2px;
+    border: color(white);
+    transform: translate(00%, 275px);
+    display: none;
 }
