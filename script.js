@@ -26,6 +26,10 @@ function changeListener152() {
     window.open("1.5/vanilla/index.html");
   } else if (value == "placeholder152") {
     alert("You must choose an option.\n- Sebastian-105");
+  } else if (value == "Ayuncraft") {
+    window.open("1.5/ayuncraft/index.html");
+  }else if (value == "oldfuture") {
+    window.open("hacked/future/");
   }
 }
 function changeListener188() {
@@ -38,8 +42,19 @@ function changeListener188() {
     window.open("1.8/resent/index.html");
   } else if (value == "placeholder188") {
     alert("You must choose an option.\n- Sebastian-105");
+  }else if (value == "ShadowClient") {
+    window.open("1.8/shadowclient/index.html");
+  }else if (value == "EaglerReborn") {
+    window.open("1.8/eaglerreborn");
+  }else if (value == "Shaders") {
+    window.open("1.8/shaders/");
+  }else if (value == "piclient") {
+    window.open("hacked/piclient");
+  }else if (value == "DragonX") {
+    window.open("hacked/dragonx/");
   }
 }
+
 function changeListener() {
   var value = this.value;
   console.log(value);
@@ -48,6 +63,8 @@ function changeListener() {
     $(".diva").fadeIn("slow");
   } if (value == "eagler188") {
     $(".dive").fadeIn("slow");
+  }if (value == "hackedclientsa") {
+    $(".divs").fadeIn("slow");
   } if (value == "placeholder") {
     alert("You must choose an option.\n- Sebastian-105");
   }

@@ -23,13 +23,19 @@ select {
 .diva {
     border-width: 2px;
     border: color(white);
-    transform: translate(00%, 200px);
+    transform: translate(00%, 500px);
+    display: none;
+}
+.divs {
+    border-width: 2px;
+    border: color(white);
+    transform: translate(00%, 650px);
     display: none;
 }
 
 .dive {
     border-width: 2px;
     border: color(white);
-    transform: translate(00%, 275px);
+    transform: translate(00%, 575px);
     display: none;
 }
