@@ -17,7 +17,7 @@ function changeListener152() {
   console.log(value);
 
   if (value == "Precision") {
-    window.open("1.5/precision/index.html");
+    window.open("1.5/precise/index.html");
   } else if (value == "resent") {
     alert(
       "This is currently not working, this is not a but, do not report this!\n- Sebastian-105"
@@ -29,7 +29,7 @@ function changeListener152() {
   } else if (value == "Ayuncraft") {
     window.open("1.5/ayuncraft/index.html");
   }else if (value == "oldfuture") {
-    window.open("hacked/future/");
+    window.open("1.5/future/");
   }
 }
 function changeListener188() {
@@ -49,9 +49,9 @@ function changeListener188() {
   }else if (value == "Shaders") {
     window.open("1.8/shaders/");
   }else if (value == "piclient") {
-    window.open("hacked/piclient");
+    window.open("1.8/piclient");
   }else if (value == "DragonX") {
-    window.open("hacked/dragonx/");
+    window.open("1.8/dragonx/");
   }
 }
 
