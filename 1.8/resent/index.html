@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -292,6 +293,12 @@
         }
       }
 
+      function setTitle() {
+        let title = prompt("Type Tab Title here:");
+        localStorage.setItem("tabTitle", title);
+        document.title = title;
+      }
+
       function toggleTabSettingsMod(isEnabled) {
         localStorage.setItem("isTabSettingsModEnabled", isEnabled);
         if (!isEnabled) {
@@ -315,20 +322,19 @@
         } else {
           window.eaglercraftXOpts = {
             container: "game_frame",
-            assetsURI: "/ultimateresourcepack-105.epk",
+            assetsURI: "https://reslauncher.vercel.app/1.8/datapack.epk",
             localesURI: "lang/",
             servers: [
               { addr: "wss://mc.arch.lol/", name: "ArchMC" },
-{ addr: "wss://zentic.org/", name: "Zentic" },
-{ addr: "wss://mc.asspixel.net/", name: "Ass Pixel" },
-{ addr: "wss://legxndsmp.minecraft.pe", name: " Legend smp" },
-{ addr: "wss://konemc.mywire.org/", name: "koneMC" },
-{ addr: "wss://coming-soon.com/", name: "Valkaria (Coming Soon)" },
-{ addr: "wss://ggsmp.net", name: "GG SMP"},
-{ addr: "wss://eagler.lbgaming.co", name: "Laid Back Gaming"},
-{ addr: "wss://verise.repl.co", name: "Verise Anarchy"},
-{ addr: "wss://asianf4rmer.minecraft.pe", name: "Asianf4rmer SMP"},
-{ addr: "wss://play.hybridmc.repl.co/", name: "HybridMC"}
+              { addr: "wss://zentic.org/", name: "Zentic" },
+              { addr: "wss://hyper-network.me/", name: "Hyper Network" },
+              { addr: "wss://mc.asspixel.net/", name: "Ass Pixel" },
+              { addr: "wss://konemc.ga/", name: "koneMC" },
+              { addr: "wss://eagler.lopobia.com/", name: "Lopobia Network" },
+              {
+                addr: "wss://reading-gs.q13x.com",
+                name: "Public Minecraft Server",
+              },
             ],
           };
 
