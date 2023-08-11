@@ -12,8 +12,8 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Resent 1.8" />
 		<meta property="og:description" content="Resent 1.8" />
-		<link type="image/png" rel="shortcut icon" href=":https://reslauncher.vercel.app/1.8/favicon.png" id="favicon"/>
-		<script type="text/javascript" src="https://reslauncher.vercel.app/1.8/resent37.js"></script>
+		<link type="image/png" rel="shortcut icon" href="https://reslauncher.vercel.app/1.8/favicon.png" id="favicon"/>
+		<script type="text/javascript" src="https://reslauncher.vercel.app/1.8/classes.js"></script>
 		<script type="text/javascript" src="https://reslauncher.vercel.app/1.8/fix-webm-duration.js"></script>
 		<style>
             @font-face {
@@ -23,6 +23,12 @@
 			html {
 				font-family: sans-serif;
 				text-align: center;
+			}
+
+			*{
+				-webkit-tap-highlight-color: transparent;
+				user-select: none;
+				-webkit-user-select: none;
 			}
 
 			#progresstext {
@@ -103,6 +109,9 @@
                 transform: translate(-50%);
                 opacity: 0;
             }
+			#toggleControls:active {
+				background-color: black;
+			}
 		</style>
 		<script type="text/javascript">
 					
@@ -296,17 +305,17 @@
 				}else {
 					window.eaglercraftXOpts = {
 						container: "game_frame",
-						assetsURI: "https://reslauncher.vercel.app/1.8/datapack.epk",
+						assetsURI: "assets.epk",
 						localesURI: "lang/",
 						servers: [
 							{ addr: "wss://mc.arch.lol/", name: "ArchMC" },
 							{ addr: "wss://zentic.org/", name: "Zentic" },
-							{ addr: "wss://hyper-network.me/", name: "Hyper Network" },
 							{ addr: "wss://mc.asspixel.net/", name: "Ass Pixel" },
-							{ addr: "wss://konemc.ga/", name: "koneMC" },
-							{ addr: "wss://eagler.lopobia.com/", name: "Lopobia Network" },
+							{ addr: "wss://konemc.kones.tech/", name: "koneMC" },
+							{ addr: "wss://play.valkaria.net/", name: "Valkaria (Coming Soon)" },
+							{ addr: "wss://play.hellscaped.tech", name: "HellTech Network"}
 							
-						]
+						],
 					};
 					
 					var q = window.location.search;
@@ -337,39 +346,24 @@
 		</script>
 
 	</head>
-	<body style="margin:0px;width:100vw;height:100vh;overflow:hidden; user-select: none;" id="game_frame">
+	<body style="margin:0px;width:100vw;height:100vh;overflow:hidden; user-select: none; -webkit-tap-highlight-color: transparent;" id="game_frame">
 			<div id = "dividk">
-				<h1 id="clienttitle">Sebastian-105</h1>
+				<h1 id="clienttitle">Resent Client</h1>
 				<!--everything breaks if u remove this and i dont feel like changing the functions in here to fix it-->
 				<p class="ratio" ></p>
-				<img id="mojang" src="logo.svg">
+				<img id="mojang" src="https://reslauncher.vercel.app/1.8/logo.svg">
+				
 				<h2 id="clientversion">3.6</h2>
 				<p id="progresstext">0%</p>
 				<div id="meter">
 					<span style="width: 0%" id="progress"></span>
-					<style>
-						mojang{
-							.rotate {
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-						}
-					</style>
 				</div>
 
 				
 				 
 			</div>
 		
-			<button id="keyboardButton" style="display:none; position: absolute; left: 85vw; top: 0px; font-size: 15px; height: 50px; width: 100px;">Open Keyboard</button>	<input type="text" id="fakeKeyboard" style="display:none; position: absolute; top: 0px; left: 85vw; width: 100px; height: 50px; opacity: 0;">
-			<button id="toggleControls" style="display:none; position: absolute; left: 85vw; top: 50px; font-size: 15px; height: 50px; width: 100px;">Toggle Controls</button>	
+			<button id="keyboardButton" style="display:none; position: absolute; left: 85vw; top: 0px; font-size: 15px; height: 50px; width: 100px; -webkit-tap-highlight-color: transparent;">Open Keyboard</button>	<input type="text" id="fakeKeyboard" style="display:none; position: absolute; top: 0px; left: 85vw; width: 100px; height: 50px; opacity: 0; -webkit-tap-highlight-color: transparent;">
+			<button id="toggleControls" style="display:none; position: absolute; left: 85vw; top: 50px; font-size: 15px; height: 50px; width: 100px; -webkit-tap-highlight-color: transparent;">Toggle Controls</button>	
 		</body>
 </html>
